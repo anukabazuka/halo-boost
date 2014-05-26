@@ -1,0 +1,507 @@
+@font-face {
+    font-family: 'euphemiaregular';
+    src: url('../fonts/euphemia-webfont.eot');
+    src: url('../fonts/euphemia-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/euphemia-webfont.woff') format('woff'),
+         url('../fonts/euphemia-webfont.ttf') format('truetype'),
+         url('../fonts/euphemia-webfont.svg#euphemiaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'MyriadProLight';
+    src: url('../fonts/myriadpro-light.eot');
+    src: url('../fonts/myriadpro-light.eot') format('embedded-opentype'),
+         url('../fonts/myriadpro-light.woff') format('woff'),
+         url('../fonts/myriadpro-light.ttf') format('truetype'),
+         url('../fonts/myriadpro-light.svg#MyriadProLight') format('svg');
+}
+
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+sup {
+  vertical-align: super;
+  font-size: 50%;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+  background: #fff;
+  color: #292929;
+  font: 20px/24px 'MyriadProLight';
+}
+
+header {
+  background: #003b92;
+  border-bottom: 1px solid #134fa7;
+  color: #fff;
+  margin: 0;
+  min-height: 134px;
+  padding: 0;
+  position: relative;
+}
+
+.logo,
+.search,
+.secondary-menu li:first-child + li {
+  background: url('../img/sprite.png') no-repeat 0 0;
+}
+
+.logo:hover {
+  border: none;
+}
+
+.days-left input[type="submit"], a:link {
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+nav.main-menu {
+  background: #5f81c8;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFlNTc5OSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjNWY4MGM3IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMSUiIHN0b3AtY29sb3I9IiMxMzRmYTciIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDMzZjk2IiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+  background: -moz-linear-gradient(top,  #1e5799 0%, #5f80c7 0%, #134fa7 1%, #033f96 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(0%,#5f80c7), color-stop(1%,#134fa7), color-stop(100%,#033f96));
+  background: -webkit-linear-gradient(top,  #1e5799 0%,#5f80c7 0%,#134fa7 1%,#033f96 100%);
+  background: -o-linear-gradient(top,  #1e5799 0%,#5f80c7 0%,#134fa7 1%,#033f96 100%);
+  background: -ms-linear-gradient(top,  #1e5799 0%,#5f80c7 0%,#134fa7 1%,#033f96 100%);
+  background: linear-gradient(to bottom,  #1e5799 0%,#5f80c7 0%,#134fa7 1%,#033f96 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#033f96',GradientType=0 );
+  border-top: 1px solid #5f81c8;
+  color: #fff;
+  min-height: 60px;
+}
+
+nav.main-menu a,
+nav.main-menu a:link {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav.main-menu a:hover,
+a:hover {
+  border-bottom: 1px dashed #fff;
+  opacity: 0.7;
+}
+
+.slogan {
+  width: 80%
+}
+
+.main-menu ul li {
+  text-align: center;
+}
+
+section {
+  border-top: 1px solid #5e80c7;
+}
+
+section:nth-child(odd) {
+  background: #e9eced;
+}
+
+header .slogan {
+  line-height: 134px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.logo {
+  background-position: 0 0;
+  cursor: pointer;
+  direction: ltr;
+  display: block;
+  height: 119px;
+  text-indent: -9000px;
+  width: 278px;
+}
+
+.secondary-menu {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.secondary-menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.secondary-menu li {
+  float: left;
+  padding-left: 10px;
+  line-height: 50px;
+  margin-right: 10px;
+}
+
+.secondary-menu li:first-child + li {
+  background-position: 0 -290px;
+}
+
+.search {
+  background-position: 0 -200px;
+  cursor: pointer;
+  display: block;
+  direction: ltr;
+  height: 48px;
+  margin-left: 66px;
+  margin-right: 40px;
+  text-indent: -9000px;
+  width: 48px;
+}
+
+.main-menu {
+  clear: both;
+}
+
+.main-menu ul {
+  font-size: 24px;
+  line-height: 60px;
+}
+
+.projects-wrapper  {
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.featured-project {
+  padding: 10px;
+}
+
+.label {
+  color: #292929;
+  font: 28px/32px 'Myriad Pro';
+}
+
+.title-wrapper {
+  position: relative;
+}
+
+.title {
+  margin: 5px 0 15px;
+  padding-right: 100px;
+}
+
+.title a {
+  border-color: #003b92;
+  color: #003b92;
+  font: 36px/40px 'Sanchez', serif;
+  text-decoration: none;
+}
+
+.category {
+  color: #003b92;
+  font: 24px/28px 'Myriad Pro';
+  position: absolute;
+  right: 0;
+  text-transform: uppercase;
+  top: 12px;
+}
+
+.description {
+  font: 20px/24px 'MyriadProLight';
+  letter-spacing: .05em;
+}
+
+.owner {
+  font: 20px/24px 'MyriadProLight';
+  margin: 22px 0;
+}
+
+.owner span {
+  font-family: 'Myriad Pro';
+}
+
+.charity-wrapper {
+  overflow: hidden;
+}
+
+.charity-wrapper .left {
+  float: left;
+  width: 290px;
+}
+
+.charity-wrapper .right {
+  float: right;
+  width: 198px;
+}
+
+.charity-wrapper img {
+  padding: 10px;
+}
+
+.charity-wrapper .total {
+  font: 44px/44px 'Myriad Pro';
+}
+
+.charity-wrapper .total span {
+  display: block;
+  font-size: 27px;
+  margin-bottom: -11px;
+}
+
+.charity-wrapper .total strong {
+  color: #003b92;
+  font: 200 44px 'Sanchez', serif;
+  letter-spacing: -.05em;
+}
+
+.total-label {
+  color: #003b92; 
+  font: 30px/36px 'Myriad Pro';
+}
+
+.days-left {
+  font: 40px/42px 'Myriad Pro';
+  margin-top: -9px;
+  text-align: center;
+}
+
+.days-left strong {
+  color: #003b92;
+  display: block;
+  font: 200 108px/110px 'Sanchez', serif;
+  margin-bottom: -9px;
+}
+
+.days-left input[type="submit"] {
+  background: #ffcd17;
+  border: none;
+  border-radius: 15px;
+  box-shadow: none;
+  color: #3f3935;
+  cursor: pointer;
+  display: block;
+  font: 32px/58px 'euphemiaregular';
+  margin: 9px auto 0;
+  text-align: center;
+  width: 198px;
+}
+
+.days-left input[type="submit"]:hover {
+  background: #80e459;
+}
+
+@media (max-width: 800px) {
+  .logo {
+    margin: 0 auto;
+  }
+  
+  header .slogan {
+    font-size: 18px;
+	line-height: 22px;
+  }
+  
+  .secondary-menu {
+    background: #003b92;
+	margin-top: 30px;
+	height: 60px;
+  }
+  
+  .search {
+    position: absolute;
+	right: 0;
+  }
+  
+  .project-image img {
+    width: 100%;
+  }
+  
+  .main-menu ul li {
+    border-bottom: 1px solid #648ac1;
+  }
+  
+  .project-image {
+    position: relative;
+  }
+  
+  .percent-complete {
+    background: #fdc900;
+	border-radius: 50px;
+	color: #003b92;
+	display: block;
+	font-family: 'MyriadProLight', serif;
+	font-size: 22px;
+	height: 100px;
+	position: absolute;
+	right: 10px;
+	text-align: center;
+	top: 10px;
+	width: 100px;
+	z-index: 30;
+	
+  }
+  
+  .percent-complete div:first-child {
+    font-family: 'Sanchez', serif;
+	font-size: 40px;
+	margin: 15px 0 9px 5px;
+  }
+
+}
+
+@media (min-width: 800px) {
+  .logo {
+    left: 0;
+	position: absolute;
+	top: 0;
+	z-index: 10;
+  }
+
+  .secondary-menu {
+    line-height: 48px;
+	position: absolute;
+	right: 0;
+	top: 42px;
+	z-index: 10;
+  }
+  
+  .main-menu ul {
+    margin: 0 auto;
+  }
+  
+  .main-menu ul li {
+    display: block;
+	float: left;
+	width: 25%;
+  }
+  
+  .project-image {
+    float: left;
+    height: 540px;
+    position: relative;
+  }
+  
+  .image-wrapper,
+  .project-image img,
+  .percent-complete  {
+    position: absolute;
+  }
+  
+  .project-image {
+    overflow: hidden;
+	width: 518px;
+  }
+  
+  .project-image img {
+    top: 28px;
+	z-index: 10;
+  }
+  
+  .image-wrapper {
+    background: url('../img/project-wrapper.png') no-repeat 0 0;
+	height: 540px;
+	width: 519px;
+	z-index: 20;
+  }
+  
+  .percent-complete {
+    color: #003b92;
+	display: block;
+	font-family: 'MyriadProLight', serif;
+	font-size: 22px;
+	height: 100px;
+	left: 419px;
+	text-align: center;
+	top: 410px;
+	width: 100px;
+	z-index: 30;
+  }
+  
+  .percent-complete div:first-child {
+    font-family: 'Sanchez', serif;
+	font-size: 40px;
+	margin-bottom: 9px;
+    margin-left: 5px;
+  }
+  
+  .project-info {
+    float: left;
+	margin-left: 45px;
+	width: 399px;
+  }
+}
+
+@media (min-width: 1024px) {
+  header .slogan {
+    font-size: 25px;
+  }
+  
+  .featured-project {
+    padding: 122px 0 138px;
+  }
+}
+
+
+/* 1980 */
+
+@media (min-width: 1280px) {
+
+header .slogan {
+  font-size: 40px;
+}
+
+header .slogan,
+.main-menu ul,
+.projects-wrapper {
+  width: 1063px;
+}
+
+.project-image {
+  overflow: hidden;
+  width: 519px;
+}
+
+.project-info {
+  min-width: 499px;
+}
+
+}
